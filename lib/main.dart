@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'customtext.dart';
-import 'gradient.dart';
+import 'gradient_container.dart';
 
 void main() {
   // customerDiscount("333", name: "peter", age: 60);
@@ -15,10 +14,16 @@ class Firstpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body:
-            MyContainer([Colors.green, Colors.blue, Colors.black, Colors.red]));
+        body: MyGradientContainer(
+      colors: [Colors.blueAccent, Colors.black12, Colors.blue],
+    ));
   }
 }
+
+
+
+
+
 
 
 
